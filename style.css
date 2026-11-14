@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(104, 126, 127);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.todo-container{
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 550px;
+    height: 80vh;
+    text-align: center;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-task{
+    padding: 8px 16px;
+    height: 36px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+}
+
+#add-btn{
+    height: 36px;
+    cursor: pointer;
+    padding: 0 16px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.input-task-container{
+    display: flex;
+    gap: 10px;
+}
+
+#add-btn:hover{
+    background-color: red;
+}
+
+.todo-list{
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+    
+.todo-list li{
+    font-size: 20px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #3a2b55;
+    color: white;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list li:hover{
+    background-color: rgb(92, 117, 92);
+    transition: background-color 0.5s ease;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgb(7, 54, 240);
+    opacity: 0.6;
+}
+
+.delBtn{
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(203, 111, 50);
+    
+}
